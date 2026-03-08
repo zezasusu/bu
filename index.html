@@ -73,3 +73,28 @@ function triggerAR(id) {
 
 </body>
 </html>
+
+<!-- ZEZA -->
+<div class="ar-section">
+  <!-- ✅ แก้เครื่องหมายคำพูดให้ถูก -->
+  <div class="head-title">ZEZA</div>
+  <div class="sub-title">santaza</div>
+
+  <model-viewer id="model1"
+    src="zezacharacter.glb"
+    ios-src="zezacharacter.usdz"
+    ar
+    ar-placement="floor"
+    ar-modes="scene-viewer webxr quick-look"
+    camera-controls
+    auto-rotate
+    shadow-intensity="1"
+    environment-image="neutral"
+    loading="eager"
+    style="width: 100%; height: 400px;">
+  </model-viewer>
+
+  <button class="ar-button" onclick="triggerAR('model1')">
+    Play AR
+  </button>
+</div>

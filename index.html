@@ -20,25 +20,24 @@
 </header>
 
 
-<!-- MODEL 1 -->
-<div class="ar-section">
+<model-viewer id="model1"
+  src="zezacharacter.glb"
+  ios-src="zezacharacter.usdz"
+  ar
+  ar-placement="floor"
+  ar-modes="scene-viewer webxr quick-look"
+  camera-controls
+  auto-rotate
+  shadow-intensity="1"
+  environment-image="neutral"
+  loading="eager"
 
-  <div class="head-title">ZEZA</div>
-  <div class="sub-title">popzasusu</div>
+  autoplay
+  animation-name="*"
+  animation-crossfade-duration="500"
 
-  <model-viewer id="model1"
-    src="zezacharacter.glb"
-    ios-src="zezacharacter.usdz"
-    ar
-    ar-placement="floor"
-    ar-modes="scene-viewer webxr quick-look"
-    camera-controls
-    auto-rotate
-    shadow-intensity="1"
-    environment-image="neutral"
-    loading="eager"
-    style="width:100%; height:400px;">
-  </model-viewer>
+  style="width:100%; height:400px;">
+</model-viewer>
 
   <button class="ar-button" onclick="triggerAR('model1')">
     Play AR
